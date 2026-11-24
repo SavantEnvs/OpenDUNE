@@ -1,0 +1,2 @@
+# seed files are byte-exact inputs (some are CRLF on purpose): never normalize line endings
+*/testsuite/** -text

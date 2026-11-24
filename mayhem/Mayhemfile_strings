@@ -1,0 +1,9 @@
+project: savantenvs/OpenDUNE
+target: opendune-strings
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_strings @@
+    afl: true
+    timeout: 5
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/opendune-strings/testsuite
